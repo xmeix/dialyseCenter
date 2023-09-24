@@ -1,0 +1,1119 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  font-family: "Poppins";
+  background-image: url("../../media/cream_pixels_@2X.png");
+}
+
+.disp {
+  display: none;
+}
+
+:root {
+  --primary-color: #006BA6;
+  --secondary-color: #5fb3cf;
+}
+
+.side-bar {
+  background-color: white;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 60px;
+  position: fixed;
+  height: 100vh;
+  border-radius: 0 20px 10px 0;
+}
+.side-bar .logo-container {
+  padding: 0.5em;
+}
+.side-bar .logo-container .logo .fas {
+  padding: 0.5em;
+  color: var(--primary-color);
+  font-size: 23px;
+}
+.side-bar .logo-container .logo .fas:hover {
+  cursor: pointer;
+  font-size: 28px;
+  padding: 0.3em;
+}
+.side-bar .logo-container .logo a {
+  position: relative;
+  top: -0.15em;
+  display: none;
+  padding-left: 5em;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+.side-bar .logo-container .logo a span {
+  color: var(--primary-color);
+}
+.side-bar .menu {
+  border-right: solid 2px var(--primary-color);
+  border-radius: 0 0 10px 0;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-color);
+  padding-top: 3em;
+  height: 90.5vh;
+}
+.side-bar .menu ul {
+  list-style-type: none;
+}
+.side-bar .menu ul li {
+  padding-left: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+.side-bar .menu ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  font-weight: 500;
+  display: none;
+}
+.side-bar .menu ul li i {
+  margin-right: 1em;
+  color: white;
+  font-size: 17px;
+}
+.side-bar .menu ul li:hover {
+  cursor: pointer;
+  background-color: white;
+  padding: -3em;
+  border-radius: 50px;
+  border-color: var(--primary-color);
+  width: 60px;
+}
+.side-bar .menu ul li:hover a {
+  transition: 0.6s ease;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.side-bar .menu ul li:hover .fas {
+  transition: 0.6s ease;
+  color: var(--primary-color);
+  font-size: 19px;
+}
+
+.main {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 60px;
+  background-color: white;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 1.9em;
+  position: fixed;
+  z-index: 998;
+}
+.main .PageType {
+  text-decoration: none;
+  position: absolute;
+  top: 1.5em;
+  left: 2.5em;
+}
+.main .PageType p {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
+.main .PageType p span {
+  color: var(--primary-color);
+}
+.main .PageType:hover {
+  cursor: pointer;
+}
+.main .PageType:hover p,
+.main .PageType:hover span {
+  cursor: pointer;
+}
+.main a i {
+  position: absolute;
+  color: var(--primary-color);
+  font-size: 20px;
+  top: 1.2em;
+}
+.main a i:hover {
+  font-size: 28px;
+  cursor: pointer;
+  top: 0.7em;
+  right: 0.8em;
+}
+.main a .fa-home {
+  left: 0.5em;
+}
+.main a .fa-home:hover {
+  font-size: 24px;
+  top: 0.8em;
+  left: 0.2em;
+}
+.main .Déconnexion {
+  position: absolute;
+  right: 6em;
+  top: 25%;
+  text-decoration: none;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  border: 2px solid #ffffff;
+  transition: 0.5s ease;
+  padding: 0.5em 1em;
+}
+.main .Déconnexion:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--primary-color);
+}
+.main .wrap-img {
+  position: absolute;
+  top: 0.7em;
+  right: 1em;
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+}
+.main .wrap-img:hover {
+  border: solid 1px var(--primary-color);
+  border: solid 2px var(--primary-color);
+}
+
+.Part-three {
+  position: absolute;
+  top: 4em;
+  left: 4.5em;
+  right: 1em;
+}
+.Part-three .title-Edt {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border: solid 1px white;
+}
+.Part-three .container-dem-affich {
+  display: grid;
+  grid-template-columns: auto;
+}
+.Part-three .container-dem-affich .demande-edt {
+  background-color: white;
+  border: solid 1px var(--primary-color);
+}
+.Part-three .container-dem-affich .demande-edt .titre-info {
+  color: #979090;
+  margin: 2em;
+  font-size: 15px;
+}
+.Part-three .container-dem-affich .demande-edt .EnvoiDemForm {
+  margin: 2em;
+  text-align: center;
+}
+.Part-three .container-dem-affich .demande-edt .EnvoiDemForm p {
+  font-size: 15px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.Part-three .container-dem-affich .demande-edt .EnvoiDemForm button {
+  margin-top: 1em;
+  margin-right: 1.5em;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  border: 2px solid #ffffff;
+  transition: 0.5s ease;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+.Part-three .container-dem-affich .demande-edt .EnvoiDemForm button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--primary-color);
+}
+.Part-three .container-dem-affich .affichage-edt {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: solid 1px var(--primary-color);
+}
+.Part-three .container-dem-affich .affichage-edt .Edt-title {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border: solid 1px white;
+}
+.Part-three .container-dem-affich .affichage-edt .tih {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  padding: 0.5em;
+}
+.Part-three .container-dem-affich .affichage-edt table.blueTable {
+  width: 100%;
+  border: 1px solid #12486B;
+  background-color: white;
+  text-align: center;
+  border-collapse: collapse;
+}
+.Part-three .container-dem-affich .affichage-edt table.blueTable td,
+.Part-three .container-dem-affich .affichage-edt table.blueTable th {
+  border: 1px solid rgba(216, 216, 216, 0.74);
+  padding: 2em 0.1%;
+  width: 10%;
+}
+.Part-three .container-dem-affich .affichage-edt table.blueTable tbody td {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.Part-three .container-dem-affich .affichage-edt table.blueTable thead {
+  background-color: var(--primary-color);
+}
+.Part-three .container-dem-affich .affichage-edt table.blueTable thead th {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.Part-Six {
+  position: absolute;
+  top: 4em;
+  left: 4.5em;
+  right: 1em;
+}
+.Part-Six .Liste-Factures-container {
+  background-color: white;
+  height: 87vh;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 30px 0px 0px 0px;
+  border: solid 2px var(--primary-color);
+}
+.Part-Six .Liste-Factures-container p {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.Part-Six .Liste-Factures-container ul {
+  overflow: scroll;
+  list-style: none;
+  width: 100%;
+  height: 76vh;
+}
+.Part-Six .Liste-Factures-container ul .l1 {
+  text-decoration: none;
+}
+.Part-Six .Liste-Factures-container ul .l1 .list1 {
+  color: black;
+  font-size: 15px;
+  margin-left: 1em;
+  cursor: pointer;
+  padding: 5px;
+  background-color: white;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.Part-Six .Liste-Factures-container ul .l1 .list1:hover {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+  color: var(--primary-color);
+}
+.Part-Six .Liste-Factures-container ul .l1 .list1:active {
+  border-bottom: solid 2px var(--primary-color);
+}
+.Part-Six .show-facture {
+  padding: 1em;
+}
+.Part-Six .show-facture .title-fact {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  background-color: var(--primary-color);
+}
+.Part-Six .show-facture .facture {
+  border: solid 2px var(--primary-color);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+.Part-Six .show-facture .facture .first {
+  text-align: right;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.Part-Six .show-facture .facture .second,
+.Part-Six .show-facture .facture .third {
+  margin-top: 1em;
+  text-align: left;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 1em;
+}
+.Part-Six .show-facture .facture .fourth {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+  margin-bottom: 1em;
+}
+.Part-Six .show-facture .facture .fourth span {
+  font-size: 30px;
+  font-family: "Mr De Haviland", cursive;
+}
+.Part-Six .show-facture .facture table {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: solid 1px rgba(0, 0, 0, 0.808);
+  border-collapse: collapse;
+}
+.Part-Six .show-facture .facture table tr {
+  border: solid 1px rgba(0, 0, 0, 0.808);
+}
+.Part-Six .show-facture .facture table tr td,
+.Part-Six .show-facture .facture table tr th {
+  text-align: center;
+  font-size: 13px;
+  overflow: hidden;
+  padding: 1em;
+  border: solid 1px rgba(0, 0, 0, 0.808);
+}
+
+.Part-Two {
+  position: absolute;
+  top: 5em;
+  left: 4.5em;
+  right: 1em;
+}
+.Part-Two .HistoTr .title,
+.Part-Two .HistoAn .title {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.Part-Two .HistoTr .list,
+.Part-Two .HistoAn .list {
+  margin-bottom: 1em;
+  overflow: scroll;
+  background-color: white;
+  width: 100%;
+  height: 84vh;
+  float: right;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border: solid 2px var(--primary-color);
+}
+.Part-Two .HistoTr .list ul,
+.Part-Two .HistoAn .list ul {
+  list-style: none;
+  display: grid;
+  width: 100%;
+}
+.Part-Two .HistoTr .list ul .l1,
+.Part-Two .HistoAn .list ul .l1 {
+  text-decoration: none;
+}
+.Part-Two .HistoTr .list ul .l1 li,
+.Part-Two .HistoAn .list ul .l1 li {
+  color: black;
+  font-size: 15px;
+  margin-left: 1em;
+  cursor: pointer;
+  padding: 5px;
+  background-color: white;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.Part-Two .HistoTr .list ul .l1 li:hover,
+.Part-Two .HistoAn .list ul .l1 li:hover {
+  border-bottom: solid 2px var(--primary-color);
+  color: var(--primary-color);
+}
+.Part-Two .HistoTr .list ul .l1 li:active,
+.Part-Two .HistoAn .list ul .l1 li:active {
+  border-bottom: solid 2px var(--primary-color);
+}
+.Part-Two .Ordonnance-fiche,
+.Part-Two .Ordonnance-fiche2 {
+  background-color: white;
+}
+.Part-Two .Ordonnance-fiche .title,
+.Part-Two .Ordonnance-fiche2 .title {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+.Part-Two .Ordonnance-fiche .Deb,
+.Part-Two .Ordonnance-fiche2 .Deb {
+  font-size: 18px;
+  padding: 1em;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.Part-Two .Ordonnance-fiche .Deb span,
+.Part-Two .Ordonnance-fiche2 .Deb span {
+  margin-top: 2em;
+  float: left;
+  text-decoration: none;
+}
+.Part-Two .Ordonnance-fiche .second,
+.Part-Two .Ordonnance-fiche2 .second {
+  margin-top: 2em;
+  padding: 1em;
+  text-align: right;
+  font-weight: 450;
+}
+.Part-Two .Ordonnance-fiche .middle,
+.Part-Two .Ordonnance-fiche2 .middle {
+  text-align: center;
+  font-weight: 700;
+}
+.Part-Two .Ordonnance-fiche .info,
+.Part-Two .Ordonnance-fiche2 .info {
+  padding: 2em;
+  text-align: left;
+}
+.Part-Two .Ordonnance-fiche .info span,
+.Part-Two .Ordonnance-fiche2 .info span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.Part-Two .Ordonnance-fiche .description,
+.Part-Two .Ordonnance-fiche2 .description {
+  border: solid 1px gray;
+  padding: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 15px;
+  font-weight: 700;
+}
+.Part-Two .Ordonnance-fiche .signature,
+.Part-Two .Ordonnance-fiche2 .signature {
+  padding: 2em;
+  text-align: right;
+}
+.Part-Two .Ordonnance-fiche .signature span,
+.Part-Two .Ordonnance-fiche2 .signature span {
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+}
+.Part-Two .Ordonnance-fiche {
+  border: solid 3px var(--primary-color);
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+.Part-Two .Ordonnance-fiche2 {
+  border: solid 3px var(--primary-color);
+  border-radius: 10px;
+}
+
+@media print {
+  .Part-Two .Ordonnance-fiche,
+  .Part-Two .Ordonnance-fiche2 {
+    display: none;
+    /* hide whole page */
+  }
+}
+@media only screen and (min-width: 700px) {
+  .Part-Two .wrap {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 1%;
+  }
+}
+.Part-Four {
+  position: absolute;
+  top: 4em;
+  left: 4.5em;
+  right: 1em;
+}
+.Part-Four .Regime-Container .titre-r {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.Part-Four .Regime-Container .Reg {
+  background-color: white;
+  height: 84vh;
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: solid 0.5px var(--primary-color);
+}
+.Part-Four .Regime-Container .Reg .Auto,
+.Part-Four .Regime-Container .Reg .Pas-Auto {
+  border: solid 0.5px var(--primary-color);
+}
+.Part-Four .Regime-Container .Reg .Auto p,
+.Part-Four .Regime-Container .Reg .Pas-Auto p {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-align: center;
+  border-radius: 30px 0px 0 0;
+  padding: 0.3em;
+}
+.Part-Four .Regime-Container .Reg .Auto .No,
+.Part-Four .Regime-Container .Reg .Pas-Auto .No {
+  color: rgba(255, 0, 0, 0.644);
+}
+.Part-Four .Regime-Container .Reg .Auto .Yes,
+.Part-Four .Regime-Container .Reg .Pas-Auto .Yes {
+  color: rgba(0, 128, 0, 0.568);
+}
+.Part-Four .Regime-Container .Reg .Auto .lPAuto ul,
+.Part-Four .Regime-Container .Reg .Auto .lAuto ul,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lPAuto ul,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lAuto ul {
+  list-style: none;
+}
+.Part-Four .Regime-Container .Reg .Auto .lPAuto ul li,
+.Part-Four .Regime-Container .Reg .Auto .lAuto ul li,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lPAuto ul li,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lAuto ul li {
+  border-bottom: solid 0.5px var(--primary-color);
+  padding: 0.5em;
+  margin: 1em;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.Part-Four .Regime-Container .Reg .Auto .lPAuto ul li a,
+.Part-Four .Regime-Container .Reg .Auto .lAuto ul li a,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lPAuto ul li a,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lAuto ul li a {
+  float: right;
+  text-decoration: none;
+}
+.Part-Four .Regime-Container .Reg .Auto .lPAuto ul li a i,
+.Part-Four .Regime-Container .Reg .Auto .lAuto ul li a i,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lPAuto ul li a i,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lAuto ul li a i {
+  color: rgba(255, 0, 0, 0.541);
+}
+.Part-Four .Regime-Container .Reg .Auto .lPAuto ul li a i:hover,
+.Part-Four .Regime-Container .Reg .Auto .lAuto ul li a i:hover,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lPAuto ul li a i:hover,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lAuto ul li a i:hover {
+  color: red;
+  font-size: 15px;
+  cursor: pointer;
+}
+.Part-Four .Regime-Container .Reg .Auto .lPAuto ul li:hover,
+.Part-Four .Regime-Container .Reg .Auto .lAuto ul li:hover,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lPAuto ul li:hover,
+.Part-Four .Regime-Container .Reg .Pas-Auto .lAuto ul li:hover {
+  border-bottom: solid 2px var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 15px;
+  cursor: initial;
+}
+
+.Part-Five {
+  position: absolute;
+  top: 4em;
+  left: 4.5em;
+  right: 1em;
+}
+.Part-Five .Historique-op {
+  background-color: white;
+}
+.Part-Five .Historique-op .title {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.Part-Five .Historique-op ul {
+  height: 84vh;
+  overflow: scroll;
+  list-style: none;
+  border: solid 2px var(--primary-color);
+}
+.Part-Five .Historique-op ul li {
+  display: grid;
+  grid-template-columns: 99% 1%;
+  border-bottom: solid 0.5px rgba(128, 128, 128, 0.418);
+  border-top: solid 0.5px rgba(128, 128, 128, 0.61);
+}
+.Part-Five .Historique-op ul li .wrap .IdOp {
+  text-align: center;
+  color: var(--primary-color);
+}
+.Part-Five .Historique-op ul li .wrap .IdOp span {
+  font-weight: 600;
+}
+.Part-Five .Historique-op ul li .wrap .Med span,
+.Part-Five .Historique-op ul li .wrap .Poids span,
+.Part-Five .Historique-op ul li .wrap .Tension span {
+  font-weight: 500;
+}
+.Part-Five .Historique-op ul li .wrap .Date {
+  font-size: 15px;
+  color: rgba(58, 58, 58, 0.555);
+  text-align: right;
+}
+.Part-Five .Historique-op ul li .wrap p {
+  padding: 0.5em;
+}
+.Part-Five .Historique-op ul li a {
+  margin-top: 0.5em;
+  position: relative;
+  right: 2em;
+}
+.Part-Five .Historique-op ul li a i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.Part-Five .Historique-op ul li a i:hover {
+  color: blue;
+  font-size: 23px;
+  cursor: pointer;
+}
+.Part-Five .Historique-op ul li a i:active {
+  color: blue;
+  font-size: 23px;
+  cursor: pointer;
+}
+.Part-Five .Historique-op ul li:hover {
+  border-bottom: solid 2px var(--primary-color);
+  border-top: solid 2px var(--primary-color);
+}
+.Part-Five .Chart-Container {
+  overflow: hidden;
+  border: solid 2px var(--primary-color);
+}
+.Part-Five .Chart-Container .title {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.Part-Seven {
+  position: absolute;
+  top: 4em;
+  left: 4.5em;
+  right: 1em;
+}
+.Part-Seven .infoMedecin {
+  margin: 10% 20% 0 20%;
+}
+.Part-Seven .infoMedecin .titre {
+  border-radius: 20px 20px 0 0;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  padding: 1em;
+}
+.Part-Seven .infoMedecin .description {
+  border: solid 0.5px var(--primary-color);
+  padding: 2em;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+.Part-Seven .infoMedecin .description span {
+  font-size: 15px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.Message {
+  text-align: center;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  color: #00529B;
+  background-color: #BDE5F8;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.wrap-all {
+  position: absolute;
+  top: 5em;
+  left: 5em;
+  bottom: 1em;
+  right: 1em;
+  padding: 4%;
+  display: grid;
+  grid-template-columns: 30% 30% 28%;
+  grid-template-rows: 30% 30% 28%;
+  grid-gap: 6%;
+  overflow: hidden;
+}
+
+.one {
+  grid-column: 1/span 2;
+}
+
+.two {
+  grid-area: 1/3/3/3;
+}
+
+.six {
+  grid-area: 3/2/3/4;
+}
+
+.one {
+  border: solid 2px var(--primary-color);
+  text-decoration: none;
+  color: black;
+}
+.one .text {
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  position: absolute;
+  left: 10em;
+  border: solid 2px var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 0px 30px 30px 30px;
+}
+.one .Picture {
+  position: relative;
+  top: 0.5em;
+  left: 0.5em;
+  justify-content: center;
+  height: 70px;
+  border-radius: 50%;
+  width: 70px;
+  cursor: pointer;
+}
+.one .Picture:hover {
+  border: solid 1px var(--primary-color);
+}
+.one .info {
+  text-align: left;
+  position: relative;
+  top: -3em;
+  left: 7em;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.one .info span {
+  color: var(--primary-color);
+}
+.one .description {
+  position: relative;
+  top: -3em;
+  padding: 0.5em;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.781);
+}
+.one:hover {
+  cursor: pointer;
+  border: solid 3px var(--primary-color);
+}
+.one:hover .text {
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 30px 0px 30px 30px;
+}
+.one:hover span {
+  cursor: pointer;
+}
+
+.two {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.two .text {
+  padding: 0.5em;
+  color: white;
+  font-weight: 400;
+  font-size: 11px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  border: solid 2px var(--primary-color);
+  background-color: var(--primary-color);
+}
+.two i {
+  position: relative;
+  top: 7%;
+  font-size: 40px;
+  color: var(--primary-color);
+}
+.two .info {
+  position: relative;
+  top: 15%;
+  padding: 0.5em;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+  cursor: pointer;
+}
+.two:hover {
+  cursor: pointer;
+  border: solid 3px var(--primary-color);
+}
+.two:hover .text {
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 0;
+}
+
+.three {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.three .text {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+  border: solid 2px var(--primary-color);
+  background-color: var(--primary-color);
+}
+.three .description {
+  display: none;
+}
+.three i {
+  color: var(--primary-color);
+  font-size: 40px;
+  position: relative;
+  top: 25%;
+}
+.three:hover {
+  border: solid 3px var(--primary-color);
+  cursor: pointer;
+}
+.three:hover .text {
+  cursor: pointer;
+  font-weight: 600;
+}
+.three:hover i {
+  cursor: pointer;
+}
+
+.four {
+  border: solid 2px var(--primary-color);
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.four .text {
+  padding: 0.5em;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 12px;
+  position: relative;
+}
+.four .description {
+  display: none;
+}
+.four i {
+  color: var(--primary-color);
+  font-size: 40px;
+  position: relative;
+  top: 20%;
+}
+.four:hover {
+  border: solid 3px var(--primary-color);
+  cursor: pointer;
+}
+.four:hover .text {
+  cursor: pointer;
+  font-weight: 600;
+}
+.four:hover i {
+  cursor: pointer;
+}
+
+.five {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.five .text {
+  padding: 0.5em;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 12px;
+  position: relative;
+}
+.five .info {
+  position: relative;
+  top: -2%;
+  padding: 0.5em;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: gray;
+}
+.five i {
+  display: none;
+}
+.five:hover {
+  border: solid 3px var(--primary-color);
+  cursor: pointer;
+}
+.five:hover .text {
+  cursor: pointer;
+  font-weight: 600;
+}
+.five:hover i {
+  cursor: pointer;
+}
+
+.six {
+  border: solid 2px var(--primary-color);
+  text-decoration: none;
+  color: black;
+}
+.six .text {
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  position: absolute;
+  right: 13%;
+  border: solid 2px var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 0px 30px 30px 30px;
+}
+.six .info {
+  position: relative;
+  top: 25%;
+  padding: 0.5em;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.781);
+}
+.six img {
+  display: none;
+}
+.six:hover {
+  border: solid 3px var(--primary-color);
+  cursor: pointer;
+}
+.six:hover .text {
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 30px 0px 30px 30px;
+}
+.six:hover img {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .three .description {
+    display: inherit;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+    position: relative;
+    top: 5%;
+    padding: 0.5em;
+  }
+  .three i {
+    color: var(--primary-color);
+    font-size: 30px;
+    position: relative;
+    top: 4%;
+  }
+  .four .description {
+    display: inherit;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: gray;
+    position: relative;
+    top: -5%;
+    padding: 0.7em;
+  }
+  .four i {
+    color: var(--primary-color);
+    font-size: 30px;
+    position: relative;
+    top: -7%;
+  }
+  .six img {
+    display: inherit;
+    position: relative;
+    top: 25%;
+    height: 30px;
+    margin: 0 auto;
+  }
+  .five i {
+    display: initial;
+    color: var(--primary-color);
+    font-size: 30px;
+    position: relative;
+    top: 0;
+  }
+  .two i {
+    top: 13%;
+  }
+  .two .info {
+    position: relative;
+    top: 15%;
+    padding: 1em;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: gray;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=stylePatient.css.map */
